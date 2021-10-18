@@ -13,29 +13,38 @@ let buttonSix = document.getElementById("buttonSix");
 let buttonSeven = document.getElementById("buttonSeven");
 let buttonEight = document.getElementById("buttonEight");
 let buttonNine = document.getElementById("buttonNine");
+let clearButton = document.getElementById("clearButton");
+let addButton = document.getElementById("addButton");
+let subtractButton = document.getElementById("subtractButton");
+let divideButton = document.getElementById("divideButton");
+let multiplyButton = document.getElementById("multiplyButton");
+let equalsButton = document.getElementById("equalsButton");
 
-console.log(buttonNine)
+const numberButtons = document.querySelectorAll(".numberButton");
+const symbolButtons = document.querySelectorAll(".symbolButtons");
 
 const getNumber = (event) => {
-  const numberButtons = document.querySelectorAll(".numberButton");
-  numberButtons.forEach((button) => {
-    document.getElementById("displayInput").innerHTML = button;
-  });
+  let value = event.target.textContent;
+  const parsedValue = parseInt(value);
+  console.log(parsedValue);
+  document.getElementById("displayInput").innerHTML += parsedValue;
 };
 
-buttonOne.addEventListener("click", getNumber)
-buttonTwo.addEventListener("click", getNumber)
+const getSymbol = (event) => {
+  let mathsSymbol = event.target.textContent;
+  document.getElementById("displayInput").innerHTML += mathsSymbol;
+  console.log(mathsSymbol);
+}
 
-// document.getElementById("displayInput").innerHTML = buttonOne;
-// document.getElementById("displayInput").innerHTML = buttonTwo;
+const sumNumbers = (event) => {
+  let value = event.target.textContent;
+  let parsedValue = parseInt(value);
+  let sum = parsedValue + " " + '+' + " " + parsedValue;
+  console.log(sum);
+}
 
 
 
-
-// const displayInput = document.getElementById("displayInput");
-// const numberButtons = document.getElementsByClassName("numberButton")
-
-//  //  
 
 
 
