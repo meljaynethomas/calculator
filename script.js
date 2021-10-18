@@ -22,26 +22,36 @@ let equalsButton = document.getElementById("equalsButton");
 
 const numberButtons = document.querySelectorAll(".numberButton");
 const symbolButtons = document.querySelectorAll(".symbolButtons");
+const inputDisplay = document.querySelectorAll(".inputDisplay")
+
+let firstNumberInput= document.getElementById("firstNumberInput");
+
+// let firstValue = parse int substring
+// let secondVale = parse int substring
+// let operator = " "
+
+// for loop over string - if i is not operator, keep going, and then change this to a substring
+
 
 const getNumber = (event) => {
   let value = event.target.textContent;
   const parsedValue = parseInt(value);
   console.log(parsedValue);
-  document.getElementById("displayInput").innerHTML += parsedValue;
+  document.getElementById("calculatorDisplay").innerHTML += parsedValue;
 };
 
-const getSymbol = (event) => {
-  let mathsSymbol = event.target.textContent;
-  document.getElementById("displayInput").innerHTML += mathsSymbol;
-  console.log(mathsSymbol);
+
+
+const getOperator = (event) => {
+  let operator = event.target.textContent;
+  document.getElementById("calculatorDisplay").innerHTML += operator;
+  console.log(operator);
 }
 
-const sumNumbers = (event) => {
-  let value = event.target.textContent;
-  let parsedValue = parseInt(value);
-  let sum = parsedValue + " " + '+' + " " + parsedValue;
-  console.log(sum);
-}
+// const calculateAnswer = (event) => {
+//   let sum = document.getElementById("displayInput").textContent;
+//   let sumString = sum.split('');
+//   console.log(sumString);
 
 
 
