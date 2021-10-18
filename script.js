@@ -22,8 +22,6 @@ let equalsButton = document.getElementById("equalsButton");
 
 
 
-
-
 const getNumber = (event) => {
   let value = event.target.textContent;
   const parsedValue = parseInt(value);
@@ -37,19 +35,32 @@ const getOperator = (event) => {
   console.log(operator);
 }
 
-const calculateAnswer = () => {
+const calculateAnswer = (event) => {
   let sum = document.getElementById("calculatorDisplay").textContent;
   console.log(sum);
+
+  console.log(sum.charAt(2));
+
+  
+  // let firstValue = 0;
+  //   for (let index = 0; index <= 9; index++) {
+  //     if (index !== "+" || "-" || "*" || "/") {
+  //       firstValue++;
+  //       console.log(firstValue);
+  //     }
+  //   }
+  //   return firstValue;
 }
 
+  // let firstValue = parse int substring
+  // let secondValue = parse int substring
+  // let operator = " "
+  // let total = " "
 
-// let displayString = document.getElementById("calculatorDisplay").textContent;
-
-
-// let firstValue = parse int substring
-// let secondValue = parse int substring
-// let operator = " "
-// let total = " "
+  // let addOperator = "+";
+  // let minusOperator = "-";
+  // let multiplyOperator = "*";
+  // let divisionOperator = "/";
 
 // for loop over string - if i is not operator, keep going, and then change this to a substring
 
