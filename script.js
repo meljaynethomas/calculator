@@ -39,18 +39,15 @@ const calculateAnswer = (event) => {
   let sum = document.getElementById("calculatorDisplay").textContent;
   console.log(sum);
 
-  console.log(sum.charAt(2));
+      for (let index = 0; index <= sum.length; index++) {
+        console.log(sum.substring(0, 4));
+        console.log(sum.charAt(4));
+      // if (sum.charAt(index) == "+" || "-" || "*" || "/") {
+      // console.log(sum.substring(0, sum.charAt(index)));
+      // return sum.substring(0, sum.charAt(index));
+    }
+  }
 
-  
-  // let firstValue = 0;
-  //   for (let index = 0; index <= 9; index++) {
-  //     if (index !== "+" || "-" || "*" || "/") {
-  //       firstValue++;
-  //       console.log(firstValue);
-  //     }
-  //   }
-  //   return firstValue;
-}
 
   // let firstValue = parse int substring
   // let secondValue = parse int substring
