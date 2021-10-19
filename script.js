@@ -40,13 +40,25 @@ const calculateAnswer = (event) => {
   console.log(sum);
 
       for (let index = 0; index <= sum.length; index++) {
-        console.log(sum.substring(0, 4));
-        console.log(sum.charAt(4));
-      // if (sum.charAt(index) == "+" || "-" || "*" || "/") {
-      // console.log(sum.substring(0, sum.charAt(index)));
-      // return sum.substring(0, sum.charAt(index));
-    }
-  }
+        if (sum.charAt(index) == '+') {
+          let firstNumber = sum.substring(0, index);
+          let secondNumber = sum.substring(index+1);
+          console.log(firstNumber, secondNumber);
+        } else if (sum.charAt(index) == '-') {
+          let firstNumber = sum.substring(0, index);
+          let secondNumber = sum.substring(index+1);
+          console.log(firstNumber, secondNumber);
+        } else if (sum.charAt(index) == '*') {
+          let firstNumber = sum.substring(0, index);
+          let secondNumber = sum.substring(index+1);
+          console.log(firstNumber, secondNumber);
+        } else if (sum.charAt(index) == '/') {
+          let firstNumber = sum.substring(0, index);
+          let secondNumber = sum.substring(index+1);
+          console.log(firstNumber, secondNumber);
+        }
+      }
+}      
 
 
   // let firstValue = parse int substring
@@ -58,14 +70,6 @@ const calculateAnswer = (event) => {
   // let minusOperator = "-";
   // let multiplyOperator = "*";
   // let divisionOperator = "/";
-
-// for loop over string - if i is not operator, keep going, and then change this to a substring
-
-//.charAt()
-
-
-
-
 
 
 
