@@ -45,38 +45,32 @@ const calculateAnswer = (event) => {
           let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
-          console.log(parsedFirstNumber, parsedSecondNumber);
+          let total = parsedFirstNumber+parsedSecondNumber;
+          console.log(total);
         } else if (sum.charAt(index) == '-') {
           let firstNumber = sum.substring(0, index);
           let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
-          console.log(parsedFirstNumber, parsedSecondNumber);
+          let total = parsedFirstNumber-parsedSecondNumber;
+          console.log(total);
         } else if (sum.charAt(index) == '*') {
           let firstNumber = sum.substring(0, index);
           let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
-          console.log(parsedFirstNumber, parsedSecondNumber);
-          console.log(firstNumber, secondNumber);
+          let total = parsedFirstNumber*parsedSecondNumber;
+          console.log(total);
         } else if (sum.charAt(index) == '/') {
           let firstNumber = sum.substring(0, index);
           let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
-          console.log(parsedFirstNumber, parsedSecondNumber);
+          let total = parsedFirstNumber/parsedSecondNumber;
+          console.log(total);
         }
       }
-}      
-
-  // let operator = " "
-  // let total = " "
-
-  // let addOperator = "+";
-  // let minusOperator = "-";
-  // let multiplyOperator = "*";
-  // let divisionOperator = "/";
-
+}
 
 
 
