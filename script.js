@@ -42,27 +42,33 @@ const calculateAnswer = (event) => {
       for (let index = 0; index <= sum.length; index++) {
         if (sum.charAt(index) == '+') {
           let firstNumber = sum.substring(0, index);
+          let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
-          console.log(firstNumber, secondNumber);
+          let parsedSecondNumber = parseInt(secondNumber);
+          console.log(parsedFirstNumber, parsedSecondNumber);
         } else if (sum.charAt(index) == '-') {
           let firstNumber = sum.substring(0, index);
+          let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
-          console.log(firstNumber, secondNumber);
+          let parsedSecondNumber = parseInt(secondNumber);
+          console.log(parsedFirstNumber, parsedSecondNumber);
         } else if (sum.charAt(index) == '*') {
           let firstNumber = sum.substring(0, index);
+          let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
+          let parsedSecondNumber = parseInt(secondNumber);
+          console.log(parsedFirstNumber, parsedSecondNumber);
           console.log(firstNumber, secondNumber);
         } else if (sum.charAt(index) == '/') {
           let firstNumber = sum.substring(0, index);
+          let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
-          console.log(firstNumber, secondNumber);
+          let parsedSecondNumber = parseInt(secondNumber);
+          console.log(parsedFirstNumber, parsedSecondNumber);
         }
       }
 }      
 
-
-  // let firstValue = parse int substring
-  // let secondValue = parse int substring
   // let operator = " "
   // let total = " "
 
