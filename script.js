@@ -46,28 +46,32 @@ const calculateAnswer = (event) => {
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
           let total = parsedFirstNumber+parsedSecondNumber;
-          console.log(total);
+          document.getElementById('calculatorDisplay').textContent = " ";
+          document.getElementById('calculatorDisplay').textContent = total;
         } else if (sum.charAt(index) == '-') {
           let firstNumber = sum.substring(0, index);
           let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
           let total = parsedFirstNumber-parsedSecondNumber;
-          console.log(total);
+          document.getElementById('calculatorDisplay').textContent = " ";
+          document.getElementById('calculatorDisplay').textContent = total;
         } else if (sum.charAt(index) == '*') {
           let firstNumber = sum.substring(0, index);
           let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
           let total = parsedFirstNumber*parsedSecondNumber;
-          console.log(total);
+          document.getElementById('calculatorDisplay').textContent = " ";
+          document.getElementById('calculatorDisplay').textContent = total;
         } else if (sum.charAt(index) == '/') {
           let firstNumber = sum.substring(0, index);
           let parsedFirstNumber = parseInt(firstNumber);
           let secondNumber = sum.substring(index+1);
           let parsedSecondNumber = parseInt(secondNumber);
           let total = parsedFirstNumber/parsedSecondNumber;
-          console.log(total);
+          document.getElementById('calculatorDisplay').textContent = " ";
+          document.getElementById('calculatorDisplay').textContent = total;
         }
       }
 }
