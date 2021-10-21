@@ -16,7 +16,7 @@ p {
   margin: 100px auto 5px auto;
   padding: 30px;
   height: 30px;
-  width: 308px;
+  width: 410px;
 }
 
 table {
@@ -34,9 +34,13 @@ button {
   width: 100px;
 }
 
-.calculator__clearButton {
+.calculator__buttons__clear {
   width: 100%;
   background-color: #D7F9FF;
   border: 1px solid #585757;
   border-radius: 5px;
+}
+
+.calculator__buttons__number0 {
+  width: 100%;
 }
