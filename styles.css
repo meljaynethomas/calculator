@@ -36,4 +36,7 @@ button {
 
 .calculator__clearButton {
   width: 100%;
+  background-color: #D7F9FF;
+  border: 1px solid #585757;
+  border-radius: 5px;
 }
