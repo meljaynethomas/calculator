@@ -3,10 +3,11 @@
 $font: 'Roboto', sans-serif;
 
 $color-primary: rgb(88, 87, 87);
-$color-secondary: #FFEDE1;
-$color-tertiary: #AFCBFF;
-$color-tertiary-light: #D7F9FF;
-$color-background: #F9FBF2;
+$color-secondary: #F4DFE4;
+$color-tertiary: #DDECF5;
+$color-tertiary-light: #F7F6D8;
+$color-background: #E5E6E4;
+$color-background-light: #F5F5F5;
 
 * {
   margin: 0;
@@ -14,4 +15,5 @@ $color-background: #F9FBF2;
   font-family: $font;
   font-size: 20px;
   color: $color-primary;
+  background-color: $color-background;
 }

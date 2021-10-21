@@ -5,9 +5,10 @@
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #585757;
+  background-color: #E5E6E4;
 }
 
-p {
+#calculatorDisplay {
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -17,9 +18,16 @@ p {
   padding: 30px;
   height: 30px;
   width: 410px;
+  background-color: #F5F5F5;
 }
 
-table {
+[class^=calculator__buttons__] {
+  height: 50px;
+  width: 100px;
+}
+
+.calculator__buttons {
+  background-color: #F5F5F5;
   border: 1px solid #585757;
   border-radius: 5px;
   margin-left: auto;
@@ -28,19 +36,23 @@ table {
   height: 30px;
   width: 60px;
 }
-
-button {
-  height: 50px;
-  width: 100px;
-}
-
-.calculator__buttons__clear {
-  width: 100%;
-  background-color: #D7F9FF;
+.calculator__buttons__operator, .calculator__buttons__equals {
+  background-color: #DDECF5;
   border: 1px solid #585757;
   border-radius: 5px;
 }
-
-.calculator__buttons__number0 {
+.calculator__buttons__clear {
   width: 100%;
+  background-color: #F7F6D8;
+  border: 1px solid #585757;
+  border-radius: 5px;
+}
+.calculator__buttons__number__0 {
+  width: 100%;
+}
+
+[class^=calculator__buttons__number] {
+  background-color: #F4DFE4;
+  border: 1px solid #585757;
+  border-radius: 5px;
 }

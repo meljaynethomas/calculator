@@ -1,17 +1,40 @@
-button {
+[class^="calculator__buttons__"] {
   height: 50px;
   width: 100px;
 }
 
-.calculator__buttons__clear {
-  width: 100%;
-  background-color: $color-tertiary-light;
+.calculator__buttons {
+  background-color: $color-background-light;
   border: 1px solid $color-primary;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  height: 30px;
+  width: 60px;
+
+  &__operator,
+  &__equals {
+    background-color: $color-tertiary;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+  }
+
+  &__clear {
+    width: 100%;
+    background-color: $color-tertiary-light;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+  }
+
+  &__number__0 {
+    width: 100%;
+  }
 }
 
-.calculator__buttons__number0 {
-  width: 100%;
+[class^="calculator__buttons__number"] {
+    background-color: $color-secondary;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
 }
-
 
