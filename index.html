@@ -11,34 +11,34 @@
 <body>
     <main>
       <p id="calculatorDisplay"></p>
-        <table>
+        <table class="calculator">
           <tr>
-            <td><button class="numberButton" id="buttonEight" onclick="getNumber(event)">8</button></td>
-            <td><button class="numberButton" id="buttonNine" onclick="getNumber(event)">9</button></td>
-            <td><button class="operatorButton" id="divideButton" onclick="getOperator(event)">/</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">8</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">9</button></td>
+            <td><button class="calculator__operatorButton" onclick="getOperator(event)">/</button></td>
           </tr>
           <tr>
-            <td><button class="numberButton" id="buttonSix" onclick="getNumber(event)">6</button></td>
-            <td><button class="numberButton" id="buttonSeven" onclick="getNumber(event)">7</button></td>
-            <td><button class="operatorButton" id="multiplyButton" onclick="getOperator(event)">*</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">6</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">7</button></td>
+            <td><button class="calculator__operatorButton" onclick="getOperator(event)">*</button></td>
           </tr>
           <tr>
-            <td><button class="numberButton" id="buttonFour" onclick="getNumber(event)">4</button></td>
-            <td><button class="numberButton" id="buttonFive" onclick="getNumber(event)">5</button></td>
-            <td><button class="operatorButton" id="subtractButton" onclick="getOperator(event)">-</button></td>  
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">4</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">5</button></td>
+            <td><button class="calculator__operatorButton" onclick="getOperator(event)">-</button></td>  
           </tr>
           <tr>
-            <td><button class="numberButton" id="buttonTwo" onclick="getNumber(event)">2</button></td>
-            <td><button class="numberButton" id="buttonThree" onclick="getNumber(event)">3</button></td>
-            <td><button class="operatorButton" id="addButton" onclick="getOperator(event)">+</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">2</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">3</button></td>
+            <td><button class="calculator__operatorButton" onclick="getOperator(event)">+</button></td>
           </tr>
           <tr>
-            <td><button class="numberButton" id="buttonZero" onclick="getNumber(event)">0</button></td>
-            <td><button class="numberButton" id="buttonOne" onclick="getNumber(event)">1</button></td>
-            <td><button id="equalsButton" onclick="calculateAnswer(event)">=</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">0</button></td>
+            <td><button class="calculator__numberButton" onclick="getNumber(event)">1</button></td>
+            <td><button class="calculator__equalsButton" onclick="calculateAnswer(event)">=</button></td>
           </tr>
           <tr>
-            <td colspan="3"><button id="clearButton" onclick="document.getElementById('calculatorDisplay').textContent = ''">Clear</button></td>
+            <td colspan="3"><button class="calculator__clearButton" onclick="document.getElementById('calculatorDisplay').textContent = ''">Clear</button></td>
           </tr>
         </table>
         
